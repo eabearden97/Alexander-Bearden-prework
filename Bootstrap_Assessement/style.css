@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: rgba(62, 165, 184, 0.63);
+  color: white;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#navBar {
+  text-align: left;
+  font-weight: bolder;
+  margin-left: 2px;
+  font-size: 22px;
+}
+
+#fancy {
+  color: black;
+  size: 14px;
+  margin-top: 200px;
+}
+
+#digital {
+  font-weight: bolder;
+  line-height: normal;
+  font-size: 100px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.boxed {
+  border: 2px solid white;
+  display: inline;
+  padding: 5px;
+}
