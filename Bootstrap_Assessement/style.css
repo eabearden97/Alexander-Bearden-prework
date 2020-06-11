@@ -8,17 +8,9 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#navBar {
-  text-align: left;
-  font-weight: bolder;
-  margin-left: 2px;
-  font-size: 22px;
-}
-
 #fancy {
   color: black;
   size: 14px;
-  margin-top: 200px;
 }
 
 #digital {
@@ -33,4 +25,20 @@ body {
   border: 2px solid white;
   display: inline;
   padding: 5px;
+}
+
+.row {
+  width: 100%;
+  margin-bottom: 110px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+.navbar.navbar-light a {
+  color: white;
+  text-align: left;
+  font-weight: bolder;
+  margin-left: 0px;
+  font-size: 22px;
 }
