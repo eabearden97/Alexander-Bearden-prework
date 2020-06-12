@@ -26,23 +26,35 @@
 
   <!-- Container Div for Body -->
   <div class="container">
-    <!-- Title Row -->
-    <h3> Contact </h3>
-    <!-- Name Row and Form-->
-    <h6> Name </h1>
+    <h4> Contact </h4>
     <form>
-      <input class="form-control mr-sm-6" type="search" placeholder="John Smith">
+      <!-- Name Form -->
+      <div class="form-group">
+        <label for="nameInput"> Name </label>
+        <input type="text" class="form-control" id="nameInput" placeholder="John Smith">
+      </div>
+      <!-- Email Form -->
+      <div class="form-group">
+        <label for="emailInput"> Email </label>
+        <input type="email" class="form-control" id=emailInput placeholder="example@gmail.com">
+      </div>
+      <!-- Message Form -->
+      <div class="form-group">
+        <label for="messageInput"> Message </label>
+        <textarea class="form-control" id="messageInput" rows="5"></textarea>
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary mb-2"> Submit </button>
     </form>
-    <!-- Email Row and Form-->
-    <h6> Email </h1>
-    <form>
-      <input class="form-control mr-sm-6" type="search" placeholder="example@gmail.com">
-    </form>
-    <!-- Name Row and Form-->
-    <h6> Message </h1>
-      <form>
-        <input class="form-control mr-sm-6" type="search" rows="10">
-      </form>
+  </div>
+
+  <!-- Container Div for Bottom NavBar -->
+  <div class="container">
+    <!-- Bottom NavBar Row -->
+    <nav class="navbar fixed-bottom navbar-light bg-light justify-content-center">
+      <!-- Copyright Text-->
+      <a class="navbar-brand"> Copyright © </a>
+    </nav>
   </div>
 
 </body>
