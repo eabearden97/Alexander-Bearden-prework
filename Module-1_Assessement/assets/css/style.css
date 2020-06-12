@@ -1,0 +1,55 @@
+/* Header Styles */
+#navbarname {
+    background-color: #4aaaa5;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+#navbar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: #dddddd solid;
+}
+
+
+/* Body Styles */
+body {
+    background-image: url(file:///Users/abearden/Desktop/practice-folder/Alexander-Bearden-prework/Module-1_Assessement/assets/images/moroccan-flower.jpg);
+}
+#aboutbodycontainer {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border: #dddddd solid;
+}
+#pageheader {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:#4aaaa5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: #dddddd solid;
+}
+#aboutrow1 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #777777;
+}
+#aboutrow2 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #777777;
+}
+#aboutrow3 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #777777;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #666666;
+    color: #777777;
+    border-top:#4aaaa5 solid;
+}
