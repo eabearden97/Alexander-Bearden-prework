@@ -1,18 +1,24 @@
-/* Header Styles */
+/* NavBar Styles */
 #navbarname {
     background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     font-weight: bold;
-    margin: 0;
+    font-size: 22px;
+    padding: 20px;
 }
 #navbar {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     border-bottom: #dddddd solid;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-
 
 /* Body Styles */
 body {
+    margin-bottom: 80px;
     background-image: url(file:///Users/abearden/Desktop/practice-folder/Alexander-Bearden-prework/Module-1_Assessement/assets/images/moroccan-flower.jpg);
 }
 #aboutbodycontainer {
@@ -20,36 +26,78 @@ body {
     padding-left: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
+    width: 70%;
     background-color: #ffffff;
-    border: #dddddd solid;
+    border: #cccccc solid;
 }
 #pageheader {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
     color:#4aaaa5;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: #dddddd solid;
 }
 #aboutrow1 {
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
     padding-top: 10px;
     color: #777777;
 }
 #aboutrow2 {
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
     padding-top: 10px;
     color: #777777;
 }
 #aboutrow3 {
+    font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
     padding-top: 10px;
     color: #777777;
+}
+#linkedinpic {
+    max-width: 30%;
+    height: auto;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 /* Footer Styles */
 #footer {
     background-color: #666666;
     color: #777777;
+    font-size: 12px;
     border-top:#4aaaa5 solid;
+    padding-bottom: 0px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #linkedinpic {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 576px) {
+    body {
+        margin-bottom: 40px;
+    }
+    #navbar {
+        padding-left: 5%;
+        padding-right: 5%;
+        border-bottom: none;
+    }
+    #aboutbodycontainer {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #linkedinpic {
+        max-width: 100%;
+        float: none;
+    }
 }

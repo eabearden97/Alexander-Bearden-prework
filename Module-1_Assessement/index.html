@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> About Me </title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -13,49 +16,57 @@
 <body>
 
     <!-- Top NavBar -->
-    <nav id=navbar class="navbar navbar-expand-lg navbar-header bg-white px-40">
-        <!-- Container Div for NavBar -->
-        <div class="container">
-            <!-- Name Header -->
-            <a id=navbarname class="navbar-brand"> Alexander Bearden </a>
-            <!-- About Button -->
-            <a class="navbar navbar-nav ml-auto" type="button" href="index.html"> About </a>
-            <!-- Portfolio Button -->
-            <a class="navbar" type="button" href="portfolio.html"> Portfolio </a>
-            <!-- Contact Button -->
-            <a class="navbar" type="button" href="contact.html"> Contact </a>
+    <nav id=navbar class="navbar navbar-expand-md navbar-light bg-white">
+        <!-- Name Header -->
+        <a id=navbarname class="navbar-brand"> Alexander Bearden </a>
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarRoutes" aria-controls="navBarRoutes" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- NavBar Buttons -->
+        <div class="navbar-collapse collapse" id="navBarRoutes">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html"> Portfolio </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"> Contact </a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Container Div for Body -->
     <div id=aboutbodycontainer class="container bg-white">
         <!-- Title Row -->
-        <div id=pageheader class="row">
+        <div id=pageheader class="row pageheader">
             <h3> About Me</h3>
         </div>
 
         <!-- Picture and First Paragraph Row -->
         <div id="aboutrow1" class="row">
-            <!-- Column for Picture -->
-            <div id="linkedinpic" class="col-md-4">
-                <img class="img thumbnail" src="file:///Users/abearden/Desktop/practice-folder/Alexander-Bearden-prework/Module-1_Assessement/assets/images/linkedin.jpg" alt="ProfilePicture" width=100% height=100%>
+            <!-- Column to Wrap Pictures and Text -->
+            <div class="col-md-12">
+                <!-- Picture -->
+                <div id=linkedinpic>
+                    <img class="img-fluid" src="file:///Users/abearden/Desktop/practice-folder/Alexander-Bearden-prework/Module-1_Assessement/assets/images/linkedin.jpg" alt="ProfilePicture" width=100% height=100%>
+                </div>
+                <!-- First Paragraph -->
+                <div id="firstp">
+                    <p> Hi! My name is Alexander Bearden and I just recently graduated Macalester College as an economics major and a computer science minor. Throughout my four years here in the Twin Cities, I've grown to love Minnesota. It offers all the benefits of a big city with the same midwestern feel that I get back home in St. Louis. This certainly was a big part of my decision and I have not regretted it one bit. One day I can be at a fun restaurant in the city and another day I can be out fishing at a lake in the middle of nowhere. That's the kind of variety I was hoping to get when I decided to make the trek north to Minnesota and it has not disappointed me.
+                </div>
+                <div>
+                    <p> Another very important part of my time here has been my experience on the baseball team. I certainly enjoy many sports, but baseball has always been my true passion and it was really a blessing to be able to continue playing for four years in college. Along the way, I made lifelong friendships with my teammates and coaches which allowed me to grow as a person and a player.
+                </div>
+                <div>
+                    <p> Before coming to Macalester, I lived in St. Louis with my mom, dad, and sister. My sister is 3 years younger than me and is now going to school at Texas Christian University (TCU) in Fort Worth, Texas. I've been down to visit several times which is always a good time, especially while it's snowing up here.
+                </div>
             </div>
-            <!-- Column for First Paragraph -->
-            <div class="col-md-8">
-                <p> First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. First Paragraph. </p>    
-            </div>
         </div>
-
-        <!-- Second Paragraph Row -->
-        <div id="aboutrow2" class="row">
-            <p> Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. Second Paragraph. </p>
-        </div>
-
-        <!-- Third Paragraph Row -->
-        <div id="aboutrow3" class="row">
-            <p> Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. Third Paragraph. </p>
-        </div>
-
     </div>
 
     <!-- Footer NavBar -->
