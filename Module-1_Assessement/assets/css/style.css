@@ -15,6 +15,21 @@
     padding-top: 0px;
     padding-bottom: 0px;
 }
+.navbar-nav>li {
+    border-right: 2px solid #dddddd;
+    border-radius: 1;
+}
+.navbar-nav>li:last-child{
+    border: none;
+}
+#contactnavbar {
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: #dddddd solid;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 
 /* Body Styles */
 body {
@@ -28,13 +43,23 @@ body {
     margin-bottom: 40px;
     width: 70%;
     background-color: #ffffff;
-    border: #cccccc solid;
+    border: #cccccc solid 1px;
+}
+#contactbodycontainer {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 60%;
+    background-color: #ffffff;
+    border: #cccccc solid 1px;
 }
 #pageheader {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:#4aaaa5;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
     border-bottom: #dddddd solid;
 }
 #aboutrow1 {
@@ -62,13 +87,22 @@ body {
     padding-right: 20px;
     padding-bottom: 20px;
 }
+#submitbutton {
+    background-color: #4aaaa5;
+    border-color: #4aaaa5;
+    border-radius: 0;
+}
+.form-group {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
 
 /* Footer Styles */
 #footer {
     background-color: #666666;
     color: #777777;
     font-size: 12px;
-    border-top:#4aaaa5 solid;
+    border-top:#4aaaa5 solid 5px;
     padding-bottom: 0px;
     overflow: hidden;
     position: fixed;
