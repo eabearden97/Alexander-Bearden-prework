@@ -12,30 +12,30 @@
 
 <body>
 
-  <!-- Container Div for NavBar -->
-  <div class="container">
-    <!-- NavBar Row -->
-    <div class="row">
-        <nav class="navbar navbar-light bg-light">
-            <!-- Name Column -->
-            <div class="col-md-3">
-                <a class="navbar-brand"> Alexander Bearden </a>
-            </div>
-            <!-- About Column -->
-            <div class="col-md-1">
-                <a class="navbar-toggler" type="button" href="index.html"> About </a>
-            </div>
-            <!-- Portfolio Column -->
-            <div class="col-md-1">
-                <a class="navbar-toggler" type="button" href="portfolio.html"> Portfolio </a>
-            </div>
-            <!-- Contact Column -->
-            <div class="col-md-1">
-                <a class="navbar-toggler" type="button" href="contact.html"> Contact </a>
-            </div>
-        </nav>
+  <!-- Top NavBar -->
+  <nav id=navbar class="navbar navbar-expand-md navbar-light bg-white">
+    <!-- Name Header -->
+    <a id=navbarname class="navbar-brand"> Alexander Bearden </a>
+    <!-- Toggler Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarRoutes" aria-controls="navBarRoutes" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- NavBar Buttons -->
+    <div class="navbar-collapse collapse" id="navBarRoutes">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"> About </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html"> Portfolio </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"> Contact </a>
+            </li>
+        </ul>
     </div>
-  </div>
+  </nav>
 
   <!-- Container Div for Body -->
   <div class="container">
@@ -129,14 +129,14 @@
 
   </div>
 
-  <!-- Container Div for Bottom NavBar -->
-  <div class="container">
-    <!-- Bottom NavBar Row -->
-    <nav class="navbar fixed-bottom navbar-light bg-light justify-content-center">
+  <!-- Footer NavBar -->
+  <nav id=footer class="navbar navbar-light">
+    <!-- Container Div for Bottom NavBar -->
+    <div class="container justify-content-center">
       <!-- Copyright Text-->
-      <a class="navbar-brand"> Copyright © </a>
-    </nav>
-  </div>
+      <a class="navbar-text"> Copyright © </a>
+    </div>
+  </nav>
 
 </body>
 
