@@ -14,6 +14,7 @@
     padding-right: 15%;
     padding-top: 0px;
     padding-bottom: 0px;
+    color: #777777;
 }
 .navbar-nav>li {
     border-right: 2px solid #dddddd;
@@ -24,6 +25,7 @@
 }
 #contactnavbar {
     font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
     border-bottom: #dddddd solid;
     padding-left: 20%;
     padding-right: 20%;
@@ -43,7 +45,7 @@ body {
     margin-bottom: 40px;
     width: 70%;
     background-color: #ffffff;
-    border: #cccccc solid 1px;
+    border: #dddddd solid 1px;
 }
 #contactbodycontainer {
     padding-right: 40px;
@@ -52,7 +54,7 @@ body {
     margin-bottom: 40px;
     width: 60%;
     background-color: #ffffff;
-    border: #cccccc solid 1px;
+    border: #dddddd solid 1px;
 }
 #pageheader {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -60,21 +62,9 @@ body {
     padding-top: 20px;
     padding-bottom: 15px;
     margin-bottom: 15px;
-    border-bottom: #dddddd solid;
+    border-bottom: #cccccc solid;
 }
-#aboutrow1 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    color: #777777;
-}
-#aboutrow2 {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    color: #777777;
-}
-#aboutrow3 {
+#aboutrow {
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -120,6 +110,7 @@ body {
     background-color: #666666;
     color: #777777;
     font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
     border-top:#4aaaa5 solid 5px;
     padding-bottom: 0px;
     overflow: hidden;
@@ -138,6 +129,11 @@ body {
         margin-bottom: 40px;
     }
     #navbar {
+        padding-left: 5%;
+        padding-right: 5%;
+        border-bottom: none;
+    }
+    #contactnavbar {
         padding-left: 5%;
         padding-right: 5%;
         border-bottom: none;
