@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title> Hangman Game </title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title> Hangman Game </title>
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- Header Container -->
-    <div class="container">
-        <div class="row">
+    <div id="headercontainer align-middle" class="container bg-black">
             <!-- Baseball Image -->
-            <div class="col">
-                <img src="assets/images/baseball.jpg" alt="baseball" width="100%" height="100%">
-            </div>
+                <img id="baseball1"  class="img-fluid" src="assets/images/baseball.jpg" alt="baseball">
             <!-- Header -->
-            <div class="col">
-                <header> Hangman </header>
-            </div>
+                <p id=hangman> Hangman </p>
             <!-- Baseball Image 2 -->
-            <div class="col">
-                <img src="assets/images/baseball.jpg" alt="baseball" width="100%" height="100%">
-            </div>
-        </div>
+                <img id="baseball2" class="img-fluid" src="assets/images/baseball.jpg" alt="baseball">
     </div>
 
     <!-- Answer Container -->

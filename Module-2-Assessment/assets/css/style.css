@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+
+/* Header Styles */
+#headercontainer {
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: black;
+    overflow: auto;
+}
+#headerRow {
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: white;
+}
+#hangman {
+    float: left;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 50%;
+}
+
+.container {
+    width: 100%;
+}
+
+#baseball1 {
+    width: 25%;
+    height: 25%;
+    float: left;
+}
+#baseball2 {
+    width: 25%;
+    height: 25%;
+    float: left;   
+}
