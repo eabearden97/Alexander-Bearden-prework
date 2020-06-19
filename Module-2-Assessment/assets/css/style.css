@@ -7,9 +7,12 @@ body {
     justify-content: center;
     width: 100%;
     margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: black;
     overflow: auto;
+    background-color: #002D72;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 10px solid white;
+    border-radius: 25px;
 }
 #headerRow {
     width: 100%;
@@ -19,9 +22,22 @@ body {
 #hangman {
     float: left;
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 60%;
+    font-size: 8vmax;
+    font-family: 'Anton', sans-serif;
+    color: #D50032;
+}
+#baseballEdition {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    width: 100%;
+    font-size: 4vmax;
+    font-family: 'Sriracha', cursive;
+    color: #D50032; 
 }
 
 .container {
@@ -29,12 +45,40 @@ body {
 }
 
 #baseball1 {
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
     float: left;
 }
 #baseball2 {
-    width: 25%;
-    height: 25%;
-    float: left;   
+    width: 20%;
+    height: 20%;
+    float: right;   
+}
+
+/* Answer Container */
+#answercontainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+#answer {
+    width: 100%;
+    text-align: center;
+}
+#answerimage {
+    justify-content: center;
+    border-right: 2px dashed white;
+    padding: 5%;
+}
+
+/* Game Container */
+#gamecontainer {
+    border: 2px dashed white;
+}
+#gamerow  {
+    padding: 3%;
+    justify-content: center;
 }

@@ -3,93 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title> Hangman Game </title>
-    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header Container -->
-    <div id="headercontainer align-middle" class="container bg-black">
+    <div id="headercontainer" class="container">
             <!-- Baseball Image -->
                 <img id="baseball1"  class="img-fluid" src="assets/images/baseball.jpg" alt="baseball">
             <!-- Header -->
                 <p id=hangman> Hangman </p>
             <!-- Baseball Image 2 -->
                 <img id="baseball2" class="img-fluid" src="assets/images/baseball.jpg" alt="baseball">
+            <div class="row">
+                <p id=baseballEdition> Baseball Edition </p>
+            </div>
     </div>
 
     <!-- Answer Container -->
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                Answer
-            </div>
+    <div id="answercontainer" class="container">
+        <div id=answerrow class="row">
+            <p id=answer> Answer </p>
         </div>
     </div>
 
     <!-- Game Container -->
-    <div class="container">
+    <div id="gamecontainer" class="container">
         <div class="row">
             <!-- First Column -->
-            <div class="col-md-6">
-                <img src="assets/images/mlb.jpg" alt="MLB" width="100%" height="100%">
+            <div id=answerimage class="col-md-6 text-center">
+                <img src="assets/images/mlb.jpg" alt="MLB" width="90%" height="90%">
             </div>
             <!-- Second Column -->
-            <div class="col-md-6">
+            <div id=gametext class="col-md-6">
                 <!-- Press any key -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
                         <p> Press any key to get started! </p>
                     </div>
                 </div>
                 <!-- "Wins" -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
                         <p> Wins: </p>
                     </div>
                 </div>
                 <!-- # of Wins -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
-                        <p> Number of Wins </p>
+                        <p id=numWins> Number of Wins </p>
                     </div>
                 </div>
                 <!-- "Current Word" -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
-                        <p> Current Word </p>
+                        <p id=currWord> Current Word </p>
                     </div>
                 </div>
                 <!-- Word -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
                         <p> Word </p>
                     </div>
                 </div>
                 <!-- "Guesses Remaining" -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
                         <p> Number of Guesses Remaining </p>
                     </div>
                 </div>
                 <!-- Guesses -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
-                        <p> Guesses </p>
+                        <p id=guesses> Guesses </p>
                     </div>
                 </div>
                 <!-- "Letters Already Guessed" -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
                         <p> Letters Already Guessed </p>
                     </div>
                 </div>
                 <!-- Letters -->
-                <div class="row">
+                <div id=gamerow class="row">
                     <div class="column">
-                        <p> Wins: </p>
+                        <p id=letters> Letters </p>
                     </div>
                 </div>
             </div>
