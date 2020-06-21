@@ -4,12 +4,11 @@ var currentWord = "";
 var nextWord = "";
 var currentIndex = 0;
 var currentGuess = "";
-var noSpaceGuess = "";
 var guessesRemaining = 10;
 var lettersGuessed = [];
 var lastAnswer = "";
 var imageArray = [];
-const wordList = ["fastball","curveball","slider"];
+const wordList = ["fastball","bullpen","catcher","homerun","curveball","shortstop"];
 
 // References
 var winsRef = document.querySelector('#numWins');
@@ -29,12 +28,20 @@ const encrypt = function(word) {
     return encryptedWord;
 }
 
+const populateImageArray = function(words,images) {
+    for (let i=0; i<words.length; i++) {
+        var img = new Image();
+        img.src = `assets/images/${words[i]}.jpg`;
+        images.push(img);
+    }
+}
+
 String.prototype.replaceAt = function(index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
 }
 
 const noSpaces = function(word) {
-    word = word.replace(/\s/g,'');
+    word = word.replace(/\s/g,"");
     return word;
 }
 
@@ -70,25 +77,23 @@ const guessLetter = function(event) {
 
 const updateBoard = function(event) {
     if (guessesRemaining === 0 && nextWord!= undefined) {
-        console.log("You lost this puzzle.");
         lastAnswer = currentWord;
         answerRef.innerText = `Last Answer: ${lastAnswer}`;
-        // set image with an image reference
+        document.getElementById("answerimage").src=imageArray[currentIndex].src;
         currentIndex += 1;
         currentWord = wordList[currentIndex];
         nextWord = wordList[currentIndex+1];
         currentGuess = encrypt(wordList[currentIndex]);
         wordRef.innerText = currentGuess;
-        guessesRemaining = 5;
+        guessesRemaining = 10;
         guessesRemainingRef.innerText = guessesRemaining;
         lettersGuessed = [];
         lettersRef.innerText = lettersGuessed;
     }
     if (guessesRemaining === 0 && nextWord === undefined) {
-        console.log("The game is over.");
         lastAnswer = currentWord;
         answerRef.innerText = `Last Answer: ${lastAnswer}`;
-        // set image with an image reference
+        document.getElementById("answerimage").src=imageArray[currentIndex].src;
         currentIndex += 1;
         if (numWins === 1 ) {
             currentGuess = `Game Over! You won ${numWins} time!`;
@@ -97,34 +102,33 @@ const updateBoard = function(event) {
             currentGuess = `Game Over! You won ${numWins} times`;
         }
         wordRef.innerText = currentGuess;
+        lettersGuessed = [];
+        lettersRef.innerText = lettersGuessed;
         document.removeEventListener('keydown',guessLetter);
         document.removeEventListener('keydown', updateBoard);
     }
     if (currentWord === noSpaces(currentGuess) && nextWord != undefined) {
-        console.log("You won this puzzle.");
         numWins += 1;
         winsRef.innerText = numWins;
         lastAnswer = currentWord;
         answerRef.innerText = `Last Answer: ${lastAnswer}`;
-        // set image with an image reference
+        document.getElementById("answerimage").src=imageArray[currentIndex].src;
         currentIndex += 1;
         currentWord = wordList[currentIndex];
         nextWord = wordList[currentIndex+1];
         currentGuess = encrypt(wordList[currentIndex]);
         wordRef.innerText = currentGuess;
-        guessesRemaining = 5;
+        guessesRemaining = 10;
         guessesRemainingRef.innerText = guessesRemaining;
         lettersGuessed = [];
         lettersRef.innerText = lettersGuessed;
     }
     if (currentWord === noSpaces(currentGuess) && nextWord === undefined) {
-        console.log("You won this puzzle.");
         numWins += 1;
         winsRef.innerText = numWins;
-        console.log("The game is over.");
         lastAnswer = currentWord;
         answerRef.innerText = `Last Answer: ${lastAnswer}`;
-        // set image with an image reference
+        document.getElementById("answerimage").src=imageArray[currentIndex].src;
         currentIndex += 1;
         if (numWins === 1 ) {
             currentGuess = `Game Over! You won ${numWins} time!`;
@@ -133,6 +137,8 @@ const updateBoard = function(event) {
             currentGuess = `Game Over! You won ${numWins} times`;
         }
         wordRef.innerText = currentGuess;
+        lettersGuessed = [];
+        lettersRef.innerText = lettersGuessed;
         document.removeEventListener('keydown',guessLetter);
         document.removeEventListener('keydown', updateBoard);
     }
@@ -140,16 +146,10 @@ const updateBoard = function(event) {
 
 // Code
 currentWord = wordList[currentIndex];
-console.log(currentWord)
 nextWord = wordList[currentIndex+1];
-console.log(nextWord);
 currentGuess = encrypt(wordList[currentIndex]);
 wordRef.innerText = currentGuess;
-//populate imageArray
-
-    // eventually, i'll loop over the whole word list and make
-    // sure they either ran out of guesses or solved the
-    // puzzle before moving onto the next word
+populateImageArray(wordList,imageArray);
 
 // Event Listeners
 document.addEventListener('keydown',guessLetter);
