@@ -17,7 +17,8 @@ var guessesRemainingRef = document.querySelector('#guesses');
 var lettersRef = document.querySelector('#letters');
 var answerRef = document.querySelector('#answer');
 var answerImageRef = document.querySelector('#answerimage');
-
+var goodAudioRef = document.querySelector('#goodaudio');
+var badAudioRef = document.querySelector('#badaudio');
 
 // Functions
 const encrypt = function(word) {
@@ -77,6 +78,7 @@ const guessLetter = function(event) {
 
 const updateBoard = function(event) {
     if (guessesRemaining === 0 && nextWord!= undefined) {
+        badAudioRef.play();
         lastAnswer = currentWord;
         answerRef.innerText = `Last Answer: ${lastAnswer}`;
         document.getElementById("answerimage").src=imageArray[currentIndex].src;
@@ -91,6 +93,7 @@ const updateBoard = function(event) {
         lettersRef.innerText = lettersGuessed;
     }
     if (guessesRemaining === 0 && nextWord === undefined) {
+        badAudioRef.play();
         lastAnswer = currentWord;
         answerRef.innerText = `Last Answer: ${lastAnswer}`;
         document.getElementById("answerimage").src=imageArray[currentIndex].src;
@@ -108,6 +111,7 @@ const updateBoard = function(event) {
         document.removeEventListener('keydown', updateBoard);
     }
     if (currentWord === noSpaces(currentGuess) && nextWord != undefined) {
+        goodAudioRef.play();
         numWins += 1;
         winsRef.innerText = numWins;
         lastAnswer = currentWord;
@@ -124,6 +128,7 @@ const updateBoard = function(event) {
         lettersRef.innerText = lettersGuessed;
     }
     if (currentWord === noSpaces(currentGuess) && nextWord === undefined) {
+        goodAudioRef.play();
         numWins += 1;
         winsRef.innerText = numWins;
         lastAnswer = currentWord;
