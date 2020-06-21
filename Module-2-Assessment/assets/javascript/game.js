@@ -54,8 +54,6 @@ const guessLetter = function(event) {
         // If the letter ISN'T in the lettersGuessed list and IS in the currentWord
         if (key === char && !lettersGuessed.includes(char) && currentWord.includes(char)) {
             lettersGuessed.push(char);
-            console.log(char);
-            console.log(lettersGuessed);
             lettersRef.innerText=lettersGuessed;
             for (let i=0; i<currentWord.length; i++) {
                 if(currentWord.charAt(i) === key) {
@@ -70,7 +68,6 @@ const guessLetter = function(event) {
             lettersGuessed.push(char);
             lettersRef.innerText=lettersGuessed;
             guessesRemaining -= 1;
-            console.log(nextWord);
             guessesRemainingRef.innerText=guessesRemaining;
         }
     }
